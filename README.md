@@ -1,7 +1,7 @@
 # Custom Emails Program
 
 ## About
-This program will read all the events saved on a Google Calendar you have access to and send those events in an email to anyone you want.
+This program will mass-create draft emails to different users each with unique file attachments and/or unique custom fields.
 
 ## Access Instructions
 * Only has to be done one time when setting up
@@ -40,9 +40,9 @@ This program will read all the events saved on a Google Calendar you have access
 
 
 ## General Instructions
-1. Navigate to this page and format the email how you would like. For words that you want replaced for each specific email, type ```CustomField1```, ```CustomField2```, and so on
-2. Copy the HTML code that it generates and paste in the ```message.txt``` file
-3. Open the ```subject.txt``` file and type the subject line you want, using ```CustomField1```, ```CustomField2``` and so on for email-specific terminology
+1. Write out the HTML code for the email you want drafted. For words that you want replaced for each specific email, type ```CustomField1```, ```CustomField2```, and so on
+2. Copy your HTML code and paste in the ```message.txt``` file
+3. Open the ```subject.txt``` file and type the subject line you want (does not have to be HTML code), using ```CustomField1```, ```CustomField2``` and so on for email-specific terminology
 4. Open ```custom.csv``` in Microsoft Excel
 5. In ```custom.csv```, replace each line with user-specific data. Each line corresponds to a specific email. The column ```Receiver``` should contain the email addresses
     * No file: if you don't need to send an attachment for a user, leave the ```File``` column blank
